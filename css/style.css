@@ -77,7 +77,7 @@ header {
 
 
 .navigation ul {
-  padding: 4px 0px;
+  padding: 4px 5px 0px 0px;
 }
 
 
@@ -158,7 +158,7 @@ input {
 }
 
 
-.left_col h1 {
+.info h1 {
   color: white;
   font-size: 40px;
   font-weight: 700;
@@ -167,7 +167,7 @@ input {
 }
 
 
-.left_col a {
+.info a {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -176,7 +176,7 @@ input {
 }
 
 
-.left_col a:hover {
+.info a:hover {
   text-decoration: underline;
 }
 
@@ -185,10 +185,63 @@ input {
   margin-bottom: 20px;
 }
 
+.rinkAddress {
+  margin-bottom: 30px;
+
+}
 
 .rinkAddress p {
   color: white;
+  font-size: 14px;
+}
+
+.actions {
+
+
+
+}
+
+.actions a {
   font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: block;
+  color: white;
+  text-decoration: none;
+
+}
+
+.nearByRinks {
+    width: 80%;
+
+}
+
+.nearByRinks ul {
+  background: rgba(255,255,255,.9);
+}
+
+
+.nearByRinks h5 {
+  font-size: 18px;
+  background-color: #0a1629;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.nearByRinks li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a1629;
+  text-decoration: none;
+
+}
+
+.nearByRinks li a:hover {
+  background-color: white;
+
 }
 
 /*end left column style*/
@@ -244,6 +297,10 @@ input {
   font-size: 14px;
 }
 
+/******************************************
+/* calendar
+/*******************************************/
+
 
 .monthSchedule{
   width: 100%;
@@ -295,32 +352,75 @@ td:hover {
 
 
 .date  {
-    font-size: medium;
+    font-weight: 700;
+    font-size: 12px;
     padding: 5px 5px;
     text-align: left;
     vertical-align: top;
 }
 
 .calTime {
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 20px;
   font-weight: 700;
 }
 
 
+/******************************************
+/* map
+/*******************************************/
 
-
-
-
-
-
-
-
-
-
-/*.background_map{
+.background_map {
   width: 100%;
   height: 100%;
 
+}
 
-}*/
+/******************************************
+/* grid
+/*******************************************/
+
+
+
+
+.cityName {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+
+}
+
+.row {
+  margin-bottom: 50px;
+
+
+}
+.row a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tile {
+  float: left;
+  margin-left: 20px;
+  padding: 15px;
+  border: 3px solid white;
+  background-color: rgba(255,255,255,.8);
+  width: 30%;
+}
+
+.tile:hover {
+  background-color: white;
+}
+
+.tile h1{
+  font-size: 22px;
+  color: #0a1629;
+  font-weight: 700;
+}
+
+.tile p{
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
