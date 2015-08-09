@@ -9,6 +9,7 @@
      box-sizing: border-box; /* IE */
 }
 
+
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -18,6 +19,7 @@
      line-height: 0;
      height: 0;
 }
+
 
 .clear {
   clear: both;
@@ -35,6 +37,7 @@
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -45,7 +48,7 @@ body {
      font-size: 12px;
      line-height: 1.4;
      font-family: 'Economica', sans-serif;
-     background-image: url("../images/bknd1b.jpg");
+     background-image: url("../images/bknd2b.jpg");
      background-size: cover;
      background-repeat: no-repeat;
      background-color: navy;
@@ -112,7 +115,7 @@ header {
 }
 
 
-.search{
+.search {
   background-color: rgba(255,255,255,.2);
   margin: auto;
   width: 60%;
@@ -185,21 +188,17 @@ input {
   margin-bottom: 20px;
 }
 
+
 .rinkAddress {
   margin-bottom: 30px;
-
 }
+
 
 .rinkAddress p {
   color: white;
   font-size: 14px;
 }
 
-.actions {
-
-
-
-}
 
 .actions a {
   font-size: 18px;
@@ -208,13 +207,13 @@ input {
   display: block;
   color: white;
   text-decoration: none;
-
 }
+
 
 .nearByRinks {
     width: 80%;
-
 }
+
 
 .nearByRinks ul {
   background: rgba(255,255,255,.9);
@@ -223,11 +222,12 @@ input {
 
 .nearByRinks h5 {
   font-size: 18px;
-  background-color: #0a1629;
+  background-color: rgba(10, 22, 41, 0.8);
   color: white;
   padding: 10px;
   margin-top: 20px;
 }
+
 
 .nearByRinks li a {
   display: block;
@@ -236,13 +236,13 @@ input {
   font-weight: 700;
   color: #0a1629;
   text-decoration: none;
-
 }
+
 
 .nearByRinks li a:hover {
   background-color: white;
-
 }
+
 
 /*end left column style*/
 /*start right column style*/
@@ -255,11 +255,19 @@ input {
 
 
 .featureIce {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 30px;
-  clear: both;
-  height: 210px;
-  background: rgba(255,255,255,.9);
+  height: auto;
+  width: 100%;
+
+}
+
+.today {
+  background-color: rgba(26, 56, 104, 0.8);;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 700;
 }
 
 
@@ -267,11 +275,12 @@ input {
   float: left;
   width: 50%;
   display: inline-block;
+  margin-bottom: 50px;
 }
 
 
-.featureTime .headline{
-  background-color: #0a1629;
+.featureTime .headline {
+  background-color: rgba(10, 22, 41, 0.8);
   color: white;
   font-size: 14px;
   padding: 10px;
@@ -283,6 +292,7 @@ input {
 .iceTime {
   border-bottom: 1px solid #0a1629;
   padding: 10px;
+  background: rgba(255,255,255,.9);
 }
 
 
@@ -297,12 +307,13 @@ input {
   font-size: 14px;
 }
 
+
 /******************************************
 /* calendar
 /*******************************************/
 
 
-.monthSchedule{
+.monthSchedule {
   width: 100%;
   margin-bottom: 30px;
 }
@@ -313,7 +324,7 @@ input {
     font-weight: 700;
     text-align: center;
     padding: 5px;
-    background-color: #0a1629;
+    background-color: rgba(10, 22, 41, 0.8);
     color: white;
 }
 
@@ -333,7 +344,7 @@ th {
 }
 
 
-td  {
+td {
     font-size: medium;
     padding: 5px 5px;
     width: 14%;
@@ -351,13 +362,14 @@ td:hover {
 }
 
 
-.date  {
+.date {
     font-weight: 700;
     font-size: 12px;
     padding: 5px 5px;
     text-align: left;
     vertical-align: top;
 }
+
 
 .calTime {
   font-size: 11px;
@@ -373,32 +385,30 @@ td:hover {
 .background_map {
   width: 100%;
   height: 100%;
-
 }
+
 
 /******************************************
 /* grid
 /*******************************************/
 
-
-
-
 .cityName {
   font-size: 60px;
   color: white;
   margin-bottom: 30px;
-
 }
+
 
 .row {
   margin-bottom: 50px;
-
-
 }
-.row a{
+
+
+.row a {
   display: inline-block;
   text-decoration: none;
 }
+
 
 .tile {
   float: left;
@@ -409,17 +419,20 @@ td:hover {
   width: 30%;
 }
 
+
 .tile:hover {
   background-color: white;
 }
 
-.tile h1{
+
+.tile h1 {
   font-size: 22px;
   color: #0a1629;
   font-weight: 700;
 }
 
-.tile p{
+
+.tile p {
   font-size: 18px;
   color: black;
   font-weight: 700;
