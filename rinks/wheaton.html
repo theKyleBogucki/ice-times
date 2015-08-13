@@ -14,39 +14,35 @@
 		<link href='http://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" media="(max-width: 768px)" href="../css/mobile.css" type="text/css" />
 
 	</head>
 	<body>
+		<div class="nav" id="nav">
+			<a href="../grid.html">Rinks</a>
+			<a href="../map.html">Map</a>
+			<a href="#">About</a>
+			<a href="#">Contact Us</a>
+		</div>
 
-    <header>
+		<header>
       <div class="container">
 
-        <div class="navigation">
+        <div class="navigation clearfix">
           <ul>
-            <li class="dropDown"><a href="../grid.html">Rinks</a>
-						<!-- <div class="dropDownInner">
-							<ul>
-								<li><a href="#"> Cabin John Ice Arena </a></li>
-								<li><a href="#"> Kettler Capitals Iceplex </a></li>
-								<li><a href="#"> Rockville Ice Arena </a></li>
-								<li><a href="#"> Skatequest </a></li>
-								<li><a href="#"> Wheaton Ice Rink </a></li>
-
-							</ul>
-						</div> -->
-
-
-						</li>
-
-
-
+            <li><a href="../grid.html">Rinks</a></li>
             <li><a href="../map.html">Map</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
+
+					<div class="hamburger">
+					=
+				</div>
         </div>
 
       </div>
+
     </header>
 
 		<div class = "container" "clearfix">
@@ -62,7 +58,7 @@
 
 					<div class="rinkmap">
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12394.07005037606!2d-77.0342477!3d39.049119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc6b596c0fb7eaa2!2sWheaton+Ice+Rink!5e0!3m2!1sen!2sus!4v1439144767022" width="300" height="150" frameborder="0"  style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12394.07005037606!2d-77.0342477!3d39.049119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc6b596c0fb7eaa2!2sWheaton+Ice+Rink!5e0!3m2!1sen!2sus!4v1439144767022" frameborder="0"  style="border:0" allowfullscreen></iframe>
 
 					</div>
 
@@ -360,6 +356,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
   </html>

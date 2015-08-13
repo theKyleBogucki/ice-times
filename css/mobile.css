@@ -1,0 +1,153 @@
+.container {
+  width: auto;
+}
+
+body {
+  background-image: url("../images/bknd2b.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: navy;
+}
+
+.navItem {
+    display: none;
+}
+
+.hamburger {
+  display: block;
+}
+
+.navigation ul {
+  display: none;
+}
+
+
+/******************************************
+/* home page
+/*******************************************/
+
+.main-search {
+  padding-top: 75px;
+}
+
+.titleTxt {
+  margin: auto;
+  line-height: 68px;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+
+.search {
+  width: 100%;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5px;
+  float: none;
+}
+
+.button {
+  width: 100%;
+  margin-left: 0px;
+  font-size: 40px;
+}
+
+
+/******************************************
+/* grid
+/*******************************************/
+
+.cityName {
+  font-size: 40px;
+  margin-left: 20px;
+
+}
+
+.row {
+  width: 100%;
+  padding: 0 5px 0 5px;
+  margin-bottom: 0;
+}
+
+.row a {
+  display: block;
+}
+
+.tile {
+  float: none;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding: 10px;
+}
+
+/******************************************
+/* map
+/*******************************************/
+
+.map-nearByRinks {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.background_map iframe {
+  height: 400px;
+}
+
+/******************************************
+/* rink
+/*******************************************/
+
+.rinkmap iframe {
+  display: none;
+}
+
+.rinkAddress {
+  display: none;
+}
+
+.actions {
+  display: none;
+}
+
+.nearByRinks {
+  display: none;
+}
+
+.left_col {
+  float: none;
+  width: 100%;
+}
+.right_col {
+  float: none;
+  width: 100%;
+}
+
+.monthSchedule {
+  display: none;
+}
+
+.featureIce{
+  width: 95%;
+  margin: auto;
+}
+
+.featureTime {
+  display: block;
+  float: none;
+  width: 100%;
+  margin: auto;
+}
+
+.info {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 30px;
+
+}

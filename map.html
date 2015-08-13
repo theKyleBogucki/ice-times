@@ -14,40 +14,56 @@
 		<link href='http://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" media="(max-width: 768px)" href="css/mobile.css" type="text/css" />
 
 	</head>
 
 	<body>
+		<div class="nav" id="nav">
+			<a href="grid.html">Rinks</a>
+			<a href="map.html">Map</a>
+			<a href="#">About</a>
+			<a href="#">Contact Us</a>
+		</div>
 
 		<header>
       <div class="container">
 
-        <div class="navigation">
+        <div class="navigation clearfix">
           <ul>
-            <li class="dropDown"><a href="grid.html">Rinks</a>
-						<!-- <div class="dropDownInner">
-							<ul>
-								<li><a href="#"> Cabin John Ice Arena </a></li>
-								<li><a href="#"> Kettler Capital's Iceplex </a></li>
-								<li><a href="#"> Rockville Ice Rink </a></li>
-								<li><a href="#"> Skatequest </a></li>
-								<li><a href="#"> Wheaton Ice Rink </a></li>
-
-							</ul>
-						</div> -->
-						</li>
+            <li><a href="grid.html">Rinks</a></li>
             <li><a href="map.html">Map</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
+
+					<div class="hamburger">
+					=
+				</div>
         </div>
 
       </div>
+
     </header>
 
     <div class="background_map">
-      <iframe src="https://www.google.com/maps/d/embed?mid=zWozML4ch9uM.kE6ZQEzTxD7I" width="100%" height="1000px"></iframe>
+      <iframe src="https://www.google.com/maps/d/embed?mid=zWozML4ch9uM.kE6ZQEzTxD7I" ></iframe>
     </div>
+
+		<div class="map-nearByRinks">
+
+			<h5> Nearby rinks </h5>
+
+			<ul>
+				<li>	<a href="rinks/kettler.html"> Kettler Capitals Iceplex </a> </li>
+				<li>	<a href="rinks/cabinjohn.html"> Cabin John Ice Arena </a> </li>
+				<li>	<a href="rinks/rockville.html"> Rockville Ice Areana </a> </li>
+				<li>	<a href="rinks/reston.html"> Skatequest </a> </li>
+				<li>	<a href="rinks/wheaton.html"> Wheaton Ice Rink </a> </li>
+			</ul>
+		</div>
+
+
 
 
   </body>

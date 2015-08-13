@@ -69,14 +69,61 @@ body {
 header {
   background: #0a1629;
   padding: 5px;
+  margin-bottom: 15px;
+
+}
+
+#nav {
+  display: none;
+
+}
+
+.nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0px 1px 5px black;
+    background-color: white;
+}
+
+#nav a{
+  padding: 15px;
+  margin: 5px;
+  background-color: red;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#nav a:hover{
+  background-color: white;
+  color: red;
+}
+
+.hamburger {
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  float: right;
+  width: 40px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: white;
 }
 
 
 .navigation {
-  height: 30px;
+
   font-size: 14px;
   font-weight: 700;
   color: white;
+  padding: 10px;
 }
 
 
@@ -187,6 +234,11 @@ input {
 
 .rinkmap {
   margin-bottom: 20px;
+}
+
+.rinkmap iframe {
+  width: 300px;
+  height: 150px;
 }
 
 
@@ -383,11 +435,50 @@ td:hover {
 /* map
 /*******************************************/
 
-.background_map {
+.background_map iframe {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+
 }
 
+.background_map {
+  margin-top: -15px;
+
+}
+
+
+.map-nearByRinks {
+    display: none;
+}
+
+
+.map-nearByRinks ul {
+  background: rgba(255,255,255,.9);
+}
+
+
+.map-nearByRinks h5 {
+  font-size: 18px;
+  background-color: rgba(10, 22, 41, 0.8);
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+.map-nearByRinks li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a1629;
+  text-decoration: none;
+}
+
+
+.map-nearByRinks li a:hover {
+  background-color: white;
+}
 
 /******************************************
 /* grid
