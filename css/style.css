@@ -1,0 +1,439 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+
+.clear {
+  clear: both;
+}
+
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     margin: auto;
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Economica', sans-serif;
+     background-image: url("../images/bknd2b.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-color: navy;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+
+header {
+  background: #0a1629;
+  padding: 5px;
+}
+
+
+.navigation {
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+
+.navigation ul {
+  padding: 4px 5px 0px 0px;
+}
+
+
+.navigation li {
+  display: inline;
+}
+
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+}
+
+
+/******************************************
+/* home page
+/*******************************************/
+
+.main-search {
+  padding-top: 200px;
+}
+
+
+.titleTxt {
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  font-size: 72px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+.search {
+  background-color: rgba(255,255,255,.2);
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+
+.search h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+input {
+  width: 82%;
+  padding: 10px;
+  float: left;
+  font-size: 14px;
+}
+
+
+.button {
+  padding: 5px;
+  background-color: red;
+  color: white;
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+
+/******************************************
+/* rink
+/*******************************************/
+
+.left_col {
+  float: left;
+  width: 40%;
+}
+
+
+.info h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+
+.info a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+
+.rinkmap {
+  margin-bottom: 20px;
+}
+
+
+.rinkAddress {
+  margin-bottom: 30px;
+}
+
+
+.rinkAddress p {
+  color: white;
+  font-size: 14px;
+}
+
+
+.actions a {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+
+.nearByRinks {
+    width: 80%;
+}
+
+
+.nearByRinks ul {
+  background: rgba(255,255,255,.9);
+}
+
+
+.nearByRinks h5 {
+  font-size: 18px;
+  background-color: rgba(10, 22, 41, 0.8);
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+.nearByRinks li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a1629;
+  text-decoration: none;
+}
+
+
+.nearByRinks li a:hover {
+  background-color: white;
+}
+
+
+/*end left column style*/
+/*start right column style*/
+
+.right_col {
+  float: left;
+  width: 60%;
+  height: auto;
+}
+
+
+.featureIce {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  height: auto;
+  width: 100%;
+
+}
+
+.today {
+  background-color: rgba(26, 56, 104, 0.8);;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+
+.featureTime {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+
+.featureTime .headline {
+  background-color: rgba(10, 22, 41, 0.8);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.iceTime {
+  border-bottom: 1px solid #0a1629;
+  padding: 10px;
+  background: rgba(255,255,255,.9);
+}
+
+
+.iceTime h1 {
+  font-size: 22px;
+  color: #0a1629;
+  font-weight: 700;
+}
+
+
+.iceTime h2 {
+  font-size: 14px;
+}
+
+
+/******************************************
+/* calendar
+/*******************************************/
+
+
+.monthSchedule {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+.monthSchedule .month {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(10, 22, 41, 0.8);
+    color: white;
+}
+
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th {
+    padding: 0 1px;
+    text-align: center;
+    background-color:gray;
+    color:white;
+}
+
+
+td {
+    font-size: medium;
+    padding: 5px 5px;
+    width: 14%;
+    height: 80px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #0a1629;
+    background: rgba(255,255,255,.9);
+}
+
+
+td:hover {
+  background: red;
+  color: white;
+}
+
+
+.date {
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+.calTime {
+  font-size: 11px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+
+/******************************************
+/* map
+/*******************************************/
+
+.background_map {
+  width: 100%;
+  height: 100%;
+}
+
+
+/******************************************
+/* grid
+/*******************************************/
+
+.cityName {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+
+.row {
+  margin-bottom: 50px;
+}
+
+
+.row a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.tile {
+  float: left;
+  margin-left: 20px;
+  padding: 15px;
+  border: 3px solid white;
+  background-color: rgba(255,255,255,.8);
+  width: 30%;
+}
+
+
+.tile:hover {
+  background-color: white;
+}
+
+
+.tile h1 {
+  font-size: 22px;
+  color: #0a1629;
+  font-weight: 700;
+}
+
+
+.tile p {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
