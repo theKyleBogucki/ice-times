@@ -70,15 +70,18 @@ header {
   background: #0a1629;
   padding: 5px;
   margin-bottom: 15px;
-
 }
 
-#nav {
+
+/******************************************
+/* Mobile Nav
+/*******************************************/
+
+#mobileNav {
   display: none;
-
 }
 
-.nav {
+.mobile_Nav {
     position: absolute;
     top: 60px;
     right: 0;
@@ -87,7 +90,7 @@ header {
     background-color: white;
 }
 
-#nav a{
+#mobileNav a{
   padding: 15px;
   margin: 5px;
   background-color: red;
@@ -97,7 +100,7 @@ header {
   font-weight: bold;
 }
 
-#nav a:hover{
+#mobileNav a:hover{
   background-color: white;
   color: red;
 }
@@ -117,41 +120,89 @@ header {
   background-color: white;
 }
 
+/******************************************
+/* Main Nav
+/*******************************************/
+
+header img{
+  width: 130px;
+  display: inline-block;
+  margin-top: 2px;
+  margin-right: 40px;
+  float: left;
+}
 
 .navigation {
-
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
-  padding: 10px;
 }
 
+.navigation ul li {
+  padding: 5px;
 
-.navigation ul {
-  padding: 4px 5px 0px 0px;
 }
 
+.navigation ul li:hover .rinkDropDown{
+  display: block;
+}
+
+.navigation ul li a{
+  margin: 2px 0 10px 0;
+}
+
+.navigation ul, ul.rinkDropDown {
+  list-style-type: none;
+}
 
 .navigation li {
-  display: inline;
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  line-height: 12px;
+  position: relative;
+  float: left;
+  padding: 5px;
+  width: 170px;
 }
-
 
 .navigation a {
   text-decoration: none;
+  display: block;
   color: white;
-  padding: 8px;
 }
 
+ul.rinkDropDown li {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    text-align: left;
+    border-radius: 5px;
+    margin-top: 6px;
+    padding: 5px;
+    line-height: .8;
+}
+
+ul.rinkDropDown li a {
+  margin-top: 4px;
+  float: left;
+}
+
+ul.rinkDropDown li:hover{
+  background-color: rgba(255, 0, 0, 0.6);
+  color: white;
+}
+
+.rinkDropDown {
+  display: none;
+  background-color: rgba(10, 22, 41, 1);
+  padding: 5px;
+  position: absolute;
+  top: 35px;
+}
 
 /******************************************
 /* home page
 /*******************************************/
 
 .main-search {
-  padding-top: 200px;
+  margin-top: 200px;
 }
-
 
 .titleTxt {
   text-align: center;
@@ -162,14 +213,13 @@ header {
   margin-bottom: 20px;
 }
 
-
 .search {
   background-color: rgba(255,255,255,.2);
   margin: auto;
   width: 60%;
   padding: 10px;
+  margin-bottom: 100px;
 }
-
 
 .search h1 {
   font-size: 30px;
@@ -177,14 +227,12 @@ header {
   margin-bottom: 20px;
 }
 
-
 input {
   width: 82%;
   padding: 10px;
   float: left;
   font-size: 14px;
 }
-
 
 .button {
   padding: 5px;
@@ -198,6 +246,74 @@ input {
   margin-left: 10px;
 }
 
+.favoriteBar {
+  width: 100%;
+  bottom: 10px;
+}
+
+.favText {
+  float: left;
+}
+
+.favClose {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: red;
+
+}
+
+.favClose:hover {
+  background-color: red;
+  color: white;
+}
+
+.addFav {
+  margin-top: 4px;
+  float: right;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 700;
+  color: red;
+}
+
+.addFav:hover {
+  background-color: red;
+  color: white;
+}
+
+.favText {
+  font-size: 22px;
+  color: #0a1629;
+  font-weight: 700;
+
+}
+
+.favText a {
+    text-decoration: none;
+    color: #0a1629;
+
+}
+
+#cbFav {
+  display: none;
+}
+
+#ketFav {
+  display: none;
+}
+
+#rockFav {
+  display: none;
+}
 
 /******************************************
 /* rink
@@ -208,7 +324,6 @@ input {
   width: 40%;
 }
 
-
 .info h1 {
   color: white;
   font-size: 40px;
@@ -216,7 +331,6 @@ input {
   margin-bottom: 5px;
   margin-top: 20px;
 }
-
 
 .info a {
   color: white;
@@ -226,11 +340,9 @@ input {
   display: inline-block;
 }
 
-
 .info a:hover {
   text-decoration: underline;
 }
-
 
 .rinkmap {
   margin-bottom: 20px;
@@ -241,17 +353,14 @@ input {
   height: 150px;
 }
 
-
 .rinkAddress {
   margin-bottom: 30px;
 }
-
 
 .rinkAddress p {
   color: white;
   font-size: 14px;
 }
-
 
 .actions a {
   font-size: 18px;
@@ -262,16 +371,13 @@ input {
   text-decoration: none;
 }
 
-
 .nearByRinks {
     width: 80%;
 }
 
-
 .nearByRinks ul {
   background: rgba(255,255,255,.9);
 }
-
 
 .nearByRinks h5 {
   font-size: 18px;
@@ -280,7 +386,6 @@ input {
   padding: 10px;
   margin-top: 20px;
 }
-
 
 .nearByRinks li a {
   display: block;
@@ -291,11 +396,9 @@ input {
   text-decoration: none;
 }
 
-
 .nearByRinks li a:hover {
   background-color: white;
 }
-
 
 /*end left column style*/
 /*start right column style*/
@@ -306,13 +409,11 @@ input {
   height: auto;
 }
 
-
 .featureIce {
   margin-bottom: 20px;
   margin-top: 30px;
   height: auto;
   width: 100%;
-
 }
 
 .today {
@@ -323,14 +424,12 @@ input {
   font-weight: 700;
 }
 
-
 .featureTime {
   float: left;
   width: 50%;
   display: inline-block;
   margin-bottom: 50px;
 }
-
 
 .featureTime .headline {
   background-color: rgba(10, 22, 41, 0.8);
@@ -341,13 +440,11 @@ input {
   text-transform: uppercase;
 }
 
-
 .iceTime {
   border-bottom: 1px solid #0a1629;
   padding: 10px;
   background: rgba(255,255,255,.9);
 }
-
 
 .iceTime h1 {
   font-size: 22px;
@@ -355,11 +452,9 @@ input {
   font-weight: 700;
 }
 
-
 .iceTime h2 {
   font-size: 14px;
 }
-
 
 /******************************************
 /* calendar
@@ -371,7 +466,6 @@ input {
   margin-bottom: 30px;
 }
 
-
 .monthSchedule .month {
     font-size: 20px;
     font-weight: 700;
@@ -381,21 +475,18 @@ input {
     color: white;
 }
 
-
 table {
     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
 }
 
-
 th {
     padding: 0 1px;
     text-align: center;
-    background-color:gray;
+    background-color: #4E4B4F;
     color:white;
 }
-
 
 td {
     font-size: medium;
@@ -408,12 +499,10 @@ td {
     background: rgba(255,255,255,.9);
 }
 
-
 td:hover {
   background: red;
   color: white;
 }
-
 
 .date {
     font-weight: 700;
@@ -423,13 +512,11 @@ td:hover {
     vertical-align: top;
 }
 
-
 .calTime {
   font-size: 11px;
   margin-top: 20px;
   font-weight: 700;
 }
-
 
 /******************************************
 /* map
@@ -446,16 +533,13 @@ td:hover {
 
 }
 
-
 .map-nearByRinks {
     display: none;
 }
 
-
 .map-nearByRinks ul {
   background: rgba(255,255,255,.9);
 }
-
 
 .map-nearByRinks h5 {
   font-size: 18px;
@@ -465,7 +549,6 @@ td:hover {
   margin-top: 20px;
 }
 
-
 .map-nearByRinks li a {
   display: block;
   padding: 10px;
@@ -474,7 +557,6 @@ td:hover {
   color: #0a1629;
   text-decoration: none;
 }
-
 
 .map-nearByRinks li a:hover {
   background-color: white;
@@ -490,17 +572,14 @@ td:hover {
   margin-bottom: 30px;
 }
 
-
 .row {
   margin-bottom: 50px;
 }
-
 
 .row a {
   display: inline-block;
   text-decoration: none;
 }
-
 
 .tile {
   float: left;
@@ -511,18 +590,15 @@ td:hover {
   width: 30%;
 }
 
-
 .tile:hover {
   background-color: white;
 }
-
 
 .tile h1 {
   font-size: 22px;
   color: #0a1629;
   font-weight: 700;
 }
-
 
 .tile p {
   font-size: 18px;
