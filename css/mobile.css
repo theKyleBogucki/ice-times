@@ -27,15 +27,16 @@ body {
 /*******************************************/
 
 .main-search {
-  margin-top: 75px;
+  margin-top: 60px;
 }
 
 .titleTxt {
+  font-size: 60px;
   margin: auto;
   line-height: 75px;
   width: 90%;
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 
 

@@ -5,6 +5,7 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Ice Times">
     	<meta name="keywords" content="Hockey, Ice Hockey, Pick-Up, Stick 'n' Shoot">
+			<meta name="viewport" content="width=device-width">
 
 		<title>Ice Times</title>
 
@@ -39,17 +40,17 @@
             <li><a href="grid.html">Rinks</a>
 							<ul class="rinkDropDown">
 
-								<li>	<a href="rinks/cabinjohn.html"> Cabin John Ice Arena </a>
+								<li data-rink="cabinj">	<a href="rinks/cabinjohn.html"> Cabin John Ice Arena </a>
 									<div id="addCB" class="addFav">
 										+
 									</div>
 								</li>
-								<li>	<a href="rinks/kettler.html"> Kettler Capitals Iceplex </a>
+								<li data-rink="kettler">	<a href="rinks/kettler.html"> Kettler Capitals Iceplex </a>
 										<div id="addKet" class="addFav">
 											+
 										</div>
 								 </li>
-								<li>	<a href="rinks/rockville.html"> Rockville Ice Areana </a>
+								<li data-rink="rockville">	<a href="rinks/rockville.html"> Rockville Ice Areana </a>
 									<div id="addRock" class="addFav">
 										+
 									</div>
@@ -93,16 +94,16 @@
         <div class="search">
           <!-- <h1> Search by rink </h1> -->
           <input type="titleTxt" id="rinkSearch"  placeholder="Type rink name here"></input>
-          <div class="button" id="rinkSubmit">
+          <a href="" class="button" id="rinkSubmit">
             SUBMIT
-          </div>
+          </a>
         </div>
 
       </div>
     </div>
 		<div class="container">
 			<div class="favoriteBar clearfix">
-					<div id="cbFav" class="tile clearfix" >
+					<div id="cbFav" data-rink="cabinj" class="tile clearfix" >
 							<div class="favText">
 								<a href="rinks/cabinjohn.html">Cabin John</a>
 								<p>SnS 8:30am - 10:00am</p>
@@ -113,7 +114,7 @@
 							</div>
 					</div>
 
-					<div  id="ketFav" class="tile clearfix">
+					<div  id="ketFav" data-rink="kettler" class="tile clearfix">
 							<div class="favText">
 								<a href="rinks/kettler.html">Kettler Capitals Iceplex</a>
 								<p>PU 12:20pm - 1:30pm</p>
@@ -124,7 +125,7 @@
 							</div>
 					</div>
 
-					<div  id="rockFav" class="tile clearfix">
+					<div  id="rockFav" data-rink="rockville" class="tile clearfix">
 						<div class="favText">
 							<a href="rinks/rockville.html">Rockville Ice Arena</a>
 							<p>SnS 1:15pm - 2:30pm</p>

@@ -1,5 +1,14 @@
 jQuery(document).ready(function() {
 
+  // var rink = ["Cabin John","Kettler Capitals Iceplex", "Rockville Ice Rink", "Skatequest", "Wheaton Ice Rink"];
+  //
+  // for (var i = 0; i < rink.length; i++){
+  //   // console.log(cities[i]);
+  //   $("#rinkSearch").append("<option>" + rink[i] + "</option>");
+  //
+  // }
+
+
   var state = false;
 
   function hideDropDown() {
@@ -14,79 +23,38 @@ jQuery(document).ready(function() {
     $(".hamburger").text("X")
   }
 
-
-function animateNav () {
-  if (state) {
-    hideDropDown();
-  } else {
-    showDropDown();
+  function animateNav () {
+    if (state) {
+      hideDropDown();
+    } else {
+      showDropDown();
+    }
   }
-}
 
-
-$(".hamburger").click(animateNav)
-
+  $(".hamburger").click(animateNav)
 
 
 
+  function doFav() {
 
-function addCabinJohn() {
-  state = false;
-  $("#cbFav").fadeIn();
+    var rinkName = $(this).parent().attr("data-rink");
+    console.log(rinkName)
 
-}
+    $(".favoriteBar [data-rink='" + rinkName + "']").show()
 
-$("#addCB").click(addCabinJohn)
+  }
 
-
-function removeCabinJohn() {
-  state = true;
-  $("#cbFav").fadeOut();
-
-}
-
-$("#cbClose").click(removeCabinJohn)
+  $(".addFav").click(doFav);
 
 
 
+  function removeFav() {
 
+    $(this).parent().hide();
 
-function addKettler() {
-  state = false;
-  $("#ketFav").fadeIn();
+  }
 
-}
-
-$("#addKet").click(addKettler)
-
-
-function removeKettler() {
-  state = true;
-  $("#ketFav").fadeOut();
-
-}
-
-$("#ketClose").click(removeKettler)
-
-
-
-function addRockville() {
-  state = false;
-  $("#rockFav").fadeIn();
-  $("#rockFav").css("display: block;");
-
-}
-
-$("#addRock").click(addRockville)
-
-
-function removeRockville() {
-  state = true;
-  $("#rockFav").fadeOut();
-
-}
-
-$("#rockClose").click(removeRockville)
+  $(".favClose").click(removeFav);
 
 
 });
