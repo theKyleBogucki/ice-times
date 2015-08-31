@@ -154,3 +154,48 @@ input {
   margin-bottom: 30px;
 
 }
+
+/******************************************
+/* about page
+/*******************************************/
+
+.bodyTxt {
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  color: white;
+}
+
+.bodyTxt h1 {
+  font-size: 34px;
+  line-height: 36px;
+  margin: 10px 0 50px 0;
+}
+
+.bodyTxt h2 {
+  font-size: 28px;
+}
+
+.bodyTxt p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.contactForm {
+  height: 100%;
+  padding: 10px;
+}
+
+.bodyTxt input[type=text], .bodyTxt input[type=email], .bodyTxt input[type=number]{
+  width: 100%;
+  height: 45px;
+}
+
+.bodyTxt input[type=submit]{
+  height: 45px;
+  width: 100%;
+  font-family: 'Economica', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+}

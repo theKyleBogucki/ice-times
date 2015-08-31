@@ -24,8 +24,8 @@
 		<div class="mobile_Nav" id="mobileNav">
 			<a href="grid.html">Rinks</a>
 			<a href="map.html">Map</a>
-			<a href="#">About</a>
-			<a href="#">Contact Us</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact Us</a>
 		</div>
 
     <header>
@@ -69,13 +69,13 @@
 						</li>
 
             <li><a href="map.html">Map</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
 
 
-					<div class="hamburger">
-						=
+					<div class="hamburger closed">
+
 					</div>
 
         </div>
@@ -92,15 +92,19 @@
         </div>
 
         <div class="search">
-          <!-- <h1> Search by rink </h1> -->
-          <input type="titleTxt" id="rinkSearch"  placeholder="Type rink name here"></input>
-          <a href="" class="button" id="rinkSubmit">
-            SUBMIT
-          </a>
+
+					<form id="rinkForm">
+						<input type="text"  id="rinkSearch" name="rink" placeholder="Type rink name here"/>
+	          <a type="submit" href="" class="button" id="rinkSubmit">
+	            SUBMIT
+						</a>
+					</form>
+
         </div>
 
       </div>
     </div>
+
 		<div class="container">
 			<div class="favoriteBar clearfix">
 					<div id="cbFav" data-rink="cabinj" class="tile clearfix" >

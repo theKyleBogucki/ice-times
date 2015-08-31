@@ -88,9 +88,10 @@ header {
     width: 200px;
     box-shadow: 0px 1px 5px black;
     background-color: white;
+
 }
 
-#mobileNav a{
+#mobileNav a {
   padding: 15px;
   margin: 5px;
   background-color: red;
@@ -100,31 +101,47 @@ header {
   font-weight: bold;
 }
 
-#mobileNav a:hover{
+#mobileNav a:hover {
   background-color: white;
   color: red;
 }
 
 .hamburger {
   display: none;
-  font-size: 18px;
-  font-weight: bold;
-  color: red;
-  text-align: center;
   float: right;
   width: 40px;
   height: 30px;
   border-radius: 3px;
   border: 1px solid black;
   padding: 5px;
+
+}
+
+
+.closed {
+  background-image: url("../images/mob_nav.png");
+  background-position: center;
+  background-size: contain;
   background-color: white;
 }
+
+.open {
+  background-image: url("../images/mob_nav_x.png");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+}
+
+
+
+
+
 
 /******************************************
 /* Main Nav
 /*******************************************/
 
-header img{
+header img {
   width: 130px;
   display: inline-block;
   margin-top: 2px;
@@ -140,11 +157,11 @@ header img{
 
 }
 
-.navigation ul li:hover .rinkDropDown{
+.navigation ul li:hover .rinkDropDown {
   display: block;
 }
 
-.navigation ul li a{
+.navigation ul li a {
   margin: 2px 0 10px 0;
 }
 
@@ -183,7 +200,7 @@ ul.rinkDropDown li a {
   float: left;
 }
 
-ul.rinkDropDown li:hover{
+ul.rinkDropDown li:hover {
   background-color: rgba(255, 0, 0, 0.6);
   color: white;
 }
@@ -245,6 +262,8 @@ input {
   font-weight: 700;
   text-decoration: none;
   margin-left: 10px;
+  border-bottom: 1px solid darkred;
+  border-radius: 5px;
 }
 
 .favoriteBar {
@@ -519,6 +538,17 @@ td:hover {
   font-weight: 700;
 }
 
+.overlay {
+  background-color: rgba(0,0,0,.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
 /******************************************
 /* map
 /*******************************************/
@@ -605,4 +635,63 @@ td:hover {
   font-size: 18px;
   color: black;
   font-weight: 700;
+}
+
+
+/******************************************
+/* about page
+/*******************************************/
+
+.bodyTxt {
+  max-width: 760px;
+  padding: 10px;
+  margin: auto;
+  color: white;
+}
+
+
+.bodyTxt h1 {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.bodyTxt h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.bodyTxt h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.bodyTxt p {
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 35px;
+}
+
+.contactForm {
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255,255,255,.4);
+  height: 500px;
+}
+
+.bodyTxt input[type=text], .bodyTxt input[type=email], .bodyTxt input[type=number]{
+  margin-bottom: 20px;
+  width: 100%;
+  display: inline-block;
+
+}
+
+.bodyTxt input[type=submit]{
+  width: 150px;
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+  border: none;
+  margin-left: -3px;
 }

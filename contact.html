@@ -7,7 +7,7 @@
     	<meta name="keywords" content="Hockey, Ice Hockey, Pick-Up, Stick 'n' Shoot">
 			<meta name="viewport" content="width=device-width">
 
-		<title>Ice Times - Map</title>
+		<title>Ice Times</title>
 
 		<link rel="icon" type="image/ico" href="images/hockey.png"/>
 
@@ -18,13 +18,14 @@
 		<link rel="stylesheet" media="(max-width: 768px)" href="css/mobile.css" type="text/css" />
 
 	</head>
+
 	<body>
 
 		<div class="mobile_Nav" id="mobileNav">
 			<a href="grid.html">Rinks</a>
 			<a href="map.html">Map</a>
-			<a href="#">About</a>
-			<a href="#">Contact Us</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact Us</a>
 		</div>
 
     <header>
@@ -58,8 +59,8 @@
 						</li>
 
             <li><a href="map.html">Map</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
 
 
@@ -73,26 +74,46 @@
 
     </header>
 
-    <div class="background_map">
-      <iframe src="https://www.google.com/maps/d/embed?mid=zWozML4ch9uM.kE6ZQEzTxD7I" ></iframe>
-    </div>
+		<div class="container">
 
-		<div class="map-nearByRinks">
+        <div class="bodyTxt">
 
-			<h5> Nearby rinks </h5>
+          <h1>Drop us a line!</h1>
+          <h3>Want us to add a rink? Fill out the form below and we will add it to our list!</h3>
 
-			<ul>
-				<li>	<a href="rinks/kettler.html"> Kettler Capitals Iceplex </a> </li>
-				<li>	<a href="rinks/cabinjohn.html"> Cabin John Ice Arena </a> </li>
-				<li>	<a href="rinks/rockville.html"> Rockville Ice Areana </a> </li>
-				<li>	<a href="rinks/reston.html"> Skatequest </a> </li>
-				<li>	<a href="rinks/wheaton.html"> Wheaton Ice Rink </a> </li>
-			</ul>
-		</div>
+          <div class="contactForm">
+
+              <form action="contact.html">
+
+                  <input type="text"  name="firstName" placeholder="Enter Your Name Here"/>
+
+                  <input type="email" name="emailAddy" placeholder="Enter Your Email Address"/>
+
+                  <input type="text" name="rinkName" placeholder="Rink Name"/>
+
+                  <input type="text" name="rinkStreetAddy" placeholder="Street Address"/>
+
+                  <input type="text" name="rinkCity" placeholder="City"/>
+
+                  <input type="text" name="rinkState" placeholder="State/Province/Region"/>
+
+                  <input type="text"  placeholder="ZIP/Postal Code"/>
+
+                  <input class= "button" type="submit" value="Submit"/>
+
+            </form>
+
+        </div>
+
+      </div>
 
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		</div> <!--end container-->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/index.js"></script>
   </body>
-</html>
+  </html>

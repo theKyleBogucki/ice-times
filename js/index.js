@@ -14,13 +14,16 @@ jQuery(document).ready(function() {
   function hideDropDown() {
     state = false;
     $("#mobileNav").fadeOut();
-    $(".hamburger").text("=")
+    $(".hamburger").removeClass("open");
+    $(".hamburger").addClass("closed");
+
   }
 
   function showDropDown() {
     state = true;
     $("#mobileNav").fadeIn();
-    $(".hamburger").text("X")
+    $(".hamburger").removeClass("closed");
+    $(".hamburger").addClass("open");
   }
 
   function animateNav () {
@@ -55,6 +58,92 @@ jQuery(document).ready(function() {
   }
 
   $(".favClose").click(removeFav);
+
+
+  function searchRink() {
+    console.log("Search Rink Function");
+    event.preventDefault()
+
+    var rink = $("#rinkSearch").val();
+    // console.log(rink);
+
+    if (rink == "Kettler" || rink == "Kettler Ice Plex" || rink == "Kettler Capitals Iceplex"){
+
+        window.location.assign("rinks/kettler.html")
+
+    }
+
+    else if  (rink == "Cabin John" || rink == "Cabin John Ice Rink" || rink =="Cabin John Ice Arena"){
+
+        window.location.assign("rinks/cabinjohn.html")
+
+    }
+
+    else if (rink == "Rockville" || rink == "Rockville Ice Rink" || rink == "Rockville Ice Arena"){
+
+        window.location.assign("rinks/rockville.html")
+
+    }
+
+    else if (rink == "Reston" || rink == "Skatequest" || rink == "Reston Ice Rink"){
+
+      window.location.assign("rinks/reston.html")
+
+    }
+
+    else if (rink == "Wheaton" || rink == "Wheaton Ice Rink"){
+
+      window.location.assign("rinks/wheaton.html")
+
+    }
+
+    else if (rink == "Washington" || rink == "Washington DC"){
+
+      window.location.assign("grid.html")
+
+    }
+
+
+  }
+
+  $("#rinkForm").submit(searchRink)
+
+
+
+
+
+  $(".menu-toggle").click(function() {
+    $("nav a").velocity("transition.fadeIn");
+
+    $("nav").velocity({
+      translateY: ["0%", "-100%"],
+    }, {
+      easing: [400, 50],
+      duration: 500
+    });
+    $(".overlay").velocity({
+      opacity: [1, 0]
+    }, {
+      display: 'block'
+    });
+  });
+
+  // $(".overlay").click(function() {
+  //   $("nav").velocity({
+  //     translateY: ["-100%", "0%"],
+  //   }, {
+  //     easing: [400, 50],
+  //     duration: 500,
+  //   });
+  //
+  //
+  //   $(".overlay").velocity({
+  //     opacity: [0, 1]
+  //   }, {
+  //     display: 'none'
+  //   });
+
+  });
 
 
 });
