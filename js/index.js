@@ -3,12 +3,13 @@ jQuery(document).ready(function() {
 
   function faved () {
     alert("You have favorited this rink!")
-
-
-
-
   }
   $("#rinkFav").click(faved)
+
+  function register () {
+    alert("Thank you for registering for this event")
+  }
+  $("#skateSignUp").click(register)
 
   var state = false;
 
