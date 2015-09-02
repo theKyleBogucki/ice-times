@@ -1,13 +1,14 @@
 jQuery(document).ready(function() {
 
-  // var rink = ["Cabin John","Kettler Capitals Iceplex", "Rockville Ice Rink", "Skatequest", "Wheaton Ice Rink"];
-  //
-  // for (var i = 0; i < rink.length; i++){
-  //   // console.log(cities[i]);
-  //   $("#rinkSearch").append("<option>" + rink[i] + "</option>");
-  //
-  // }
 
+  function faved () {
+    alert("You have favorited this rink!")
+
+
+
+
+  }
+  $("#rinkFav").click(faved)
 
   var state = false;
 
@@ -128,22 +129,10 @@ jQuery(document).ready(function() {
     });
   });
 
-  // $(".overlay").click(function() {
-  //   $("nav").velocity({
-  //     translateY: ["-100%", "0%"],
-  //   }, {
-  //     easing: [400, 50],
-  //     duration: 500,
-  //   });
-  //
-  //
-  //   $(".overlay").velocity({
-  //     opacity: [0, 1]
-  //   }, {
-  //     display: 'none'
-  //   });
 
-  });
+
+
+
 
 
 });
