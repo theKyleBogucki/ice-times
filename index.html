@@ -5,6 +5,7 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Ice Times">
     	<meta name="keywords" content="Hockey, Ice Hockey, Pick-Up, Stick 'n' Shoot">
+			<meta name="viewport" content="width=device-width">
 
 		<title>Ice Times</title>
 
@@ -14,23 +15,73 @@
 		<link href='http://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" media="(max-width: 768px)" href="css/mobile.css" type="text/css" />
 
 	</head>
+
 	<body>
+
+		<div class="mobile_Nav" id="mobileNav">
+			<a href="grid.html">Rinks</a>
+			<a href="map.html">Map</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
 
     <header>
       <div class="container">
 
-        <div class="navigation">
+        <div class="navigation clearfix">
+
+					<a href="index.html">
+						<img src="images/logo.png">
+					</a>
           <ul>
-            <li><a href="grid.html">Rinks</a></li>
+            <li><a href="grid.html">Rinks</a>
+							<ul class="rinkDropDown">
+
+								<li data-rink="cabinj">	<a href="rinks/cabinjohn.html"> Cabin John Ice Arena </a>
+									<div id="addCB" class="addFav">
+										+
+									</div>
+								</li>
+								<li data-rink="kettler">	<a href="rinks/kettler.html"> Kettler Capitals Iceplex </a>
+										<div id="addKet" class="addFav">
+											+
+										</div>
+								 </li>
+								<li data-rink="rockville">	<a href="rinks/rockville.html"> Rockville Ice Areana </a>
+									<div id="addRock" class="addFav">
+										+
+									</div>
+								</li>
+								<li>	<a href="rinks/reston.html"> Skatequest </a>
+									<div id="addReston" class="addFav">
+										+
+									</div>
+								</li>
+								<li>	<a href="rinks/wheaton.html"> Wheaton Ice Rink </a>
+									<div id="addWheat" class="addFav">
+										+
+									</div>
+								</li>
+							</ul>
+						</li>
+
             <li><a href="map.html">Map</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
+
+
+					<div class="hamburger closed">
+
+					</div>
+
         </div>
 
       </div>
+
     </header>
 
     <div class="main-search">
@@ -41,15 +92,56 @@
         </div>
 
         <div class="search">
-          <!-- <h1> Search by rink </h1> -->
-          <input type="titleTxt" id="rinkSearch"  placeholder="Type rink name here"></input>
-          <div class="button" id="rinkSubmit">
-            SUBMIT
-          </div>
+
+					<form id="rinkForm">
+						<input type="text"  id="rinkSearch" name="rink" placeholder="Type rink name here"/>
+	          <a type="submit" href="" class="button" id="rinkSubmit">
+	            SUBMIT
+						</a>
+					</form>
+
         </div>
 
       </div>
     </div>
+
+		<div class="container">
+			<div class="favoriteBar clearfix">
+					<div id="cbFav" data-rink="cabinj" class="tile clearfix" >
+							<div class="favText">
+								<a href="rinks/cabinjohn.html">Cabin John</a>
+								<p>SnS 8:30am - 10:00am</p>
+								<p>SnS 2:00pm - 3:00pm</p>
+							</div>
+							<div id="cbClose" class="favClose">
+								<h4>X</h4>
+							</div>
+					</div>
+
+					<div  id="ketFav" data-rink="kettler" class="tile clearfix">
+							<div class="favText">
+								<a href="rinks/kettler.html">Kettler Capitals Iceplex</a>
+								<p>PU 12:20pm - 1:30pm</p>
+								<p>SnS 6:50pm - 8:10pm</p>
+							</div>
+							<div id="ketClose" class="favClose">
+								<h4>X</h4>
+							</div>
+					</div>
+
+					<div  id="rockFav" data-rink="rockville" class="tile clearfix">
+						<div class="favText">
+							<a href="rinks/rockville.html">Rockville Ice Arena</a>
+							<p>SnS 1:15pm - 2:30pm</p>
+							<p>SnS 4:00pm - 5:10pm</p>
+						</div>
+						<div id="rockClose" class="favClose">
+							<h4>X</h4>
+						</div>
+
+					</div>
+			</div>
+		</div>
 
 
 

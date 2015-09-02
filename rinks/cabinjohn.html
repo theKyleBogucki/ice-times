@@ -5,6 +5,7 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Ice Times">
     	<meta name="keywords" content="Hockey, Ice Hockey, Pick-Up, Stick 'n' Shoot">
+			<meta name="viewport" content="width=device-width">
 
 		<title>Ice Times - Cabin John Ice Rink</title>
 
@@ -14,54 +15,83 @@
 		<link href='http://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" media="(max-width: 768px)" href="../css/mobile.css" type="text/css" />
 
 	</head>
 	<body>
 
+		<div class="mobile_Nav" id="mobileNav">
+			<a href="../grid.html">Rinks</a>
+			<a href="../map.html">Map</a>
+			<a href="../about.html">About</a>
+			<a href="../contact.html">Contact Us</a>
+		</div>
+
     <header>
       <div class="container">
 
-        <div class="navigation">
+        <div class="navigation clearfix">
+
+					<a href="../index.html">
+						<img src="../images/logo.png">
+					</a>
           <ul>
-            <li class="dropDown"><a href="../grid.html">Rinks</a>
-						<!-- <div class="dropDownInner">
-							<ul>
-								<li><a href="#"> Cabin John Ice Rink </a></li>
-								<li><a href="#"> Kettler Capitals Iceplex </a></li>
-								<li><a href="#"> Rockville Ice Arena </a></li>
-								<li><a href="#"> Skatequest </a></li>
-								<li><a href="#"> Wheaton Ice Rink </a></li>
+            <li><a href="../grid.html">Rinks</a>
+							<ul class="rinkDropDown">
 
+								<li>	<a href="cabinjohn.html"> Cabin John Ice Arena </a>
+
+								</li>
+								<li>	<a href="kettler.html"> Kettler Capitals Iceplex </a>
+
+								 </li>
+								<li>	<a href="rockville.html"> Rockville Ice Areana </a>
+
+								</li>
+								<li>	<a href="reston.html"> Skatequest </a>
+
+								</li>
+								<li>	<a href="wheaton.html"> Wheaton Ice Rink </a>
+
+								</li>
 							</ul>
-						</div> -->
-
-
 						</li>
 
-
-
             <li><a href="../map.html">Map</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
           </ul>
+
+
+					<div class="hamburger closed">
+
+					</div>
+
         </div>
 
       </div>
+
     </header>
 
 		<div class = "container" "clearfix">
 
+			<div class="overlay"></div>
+
 			<div class = "left_col">
 
-				<div class="info">
-					<h1>Cabin John Ice Rink</h1>
-					<a href="http://www.montgomeryparks.org/enterprise/ice/cabin_john/", target="new">http://www.montgomeryparks.org/cabin_john</a>
-				</div>
+					<div class="info">
+
+						<h1>Cabin John Ice Rink</h1>
+						<a href="http://www.montgomeryparks.org/enterprise/ice/cabin_john/", target="new">http://www.montgomeryparks.org/cabin_john</a>
+
+					</div>
 
 
 					<div class="rinkmap">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12397.302233183442!2d-77.14824!3d39.030696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x8669ec2ef9c22378!2sCabin+John+Ice+Rink!5e0!3m2!1sen!2sus!4v1439137775305" width="300" height="150" frameborder="0"  style="border:0" allowfullscreen>
-						</iframe>>
+
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12397.302233183442!2d-77.14824!3d39.030696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x8669ec2ef9c22378!2sCabin+John+Ice+Rink!5e0!3m2!1sen!2sus!4v1439137775305" frameborder="0"  style="border:0" allowfullscreen>
+						</iframe>
+
 					</div>
 
 					<div class="rinkAddress">
@@ -74,21 +104,20 @@
 
 					<div class="actions">
 
-						<a href="#"> Favorite this rink </a>
-						<a href="#"> Print full schedule </a>
+						<a href="#" id="rinkFav"> Favorite this rink </a>
 						<a href="#"> Share this page </a>
 
 					</div>
 
 					<div class="nearByRinks">
+
 						<h5> Nearby rinks </h5>
+
 						<ul>
-
-						<li>	<a href="kettler.html"> Kettler Capitals Iceplex </a> </li>
-						<li>	<a href="rockville.html"> Rockville Ice Areana </a> </li>
-						<li>	<a href="reston.html"> Skatequest </a> </li>
-						<li>	<a href="wheaton.html"> Wheaton Ice Rink </a> </li>
-
+							<li>	<a href="kettler.html"> Kettler Capitals Iceplex </a> </li>
+							<li>	<a href="rockville.html"> Rockville Ice Areana </a> </li>
+							<li>	<a href="reston.html"> Skatequest </a> </li>
+							<li>	<a href="wheaton.html"> Wheaton Ice Rink </a> </li>
 						</ul>
 					</div>
 
@@ -107,8 +136,6 @@
 						</div>
 
 							<div class="featureTime"><!--Pick Up Times-->
-
-
 
 									<div class="headline">
 										Pick-Up Schedule
@@ -129,25 +156,25 @@
 								<div class="iceTime">
 									<h1>8:30am - 10:00am</h1>
 									<h2>3 skaters + 0 goalie(s) registered</h2>
-									<a href="#">Sign-up</a>
+									<a href="#" id="skateSignUp">Sign-up</a>
 								</div>
 
 								<div class="iceTime">
 									<h1>10:30am - 12:00pm</h1>
 									<h2>5 skaters + 0 goalie(s) registered</h2>
-									<a href="#">Sign-up</a>
+									<a href="#" id="skateSignUp">Sign-up</a>
 								</div>
 
 								<div class="iceTime">
 									<h1>2:00pm - 3:00pm</h1>
 									<h2>10 skaters + 1 goalie(s) registered</h2>
-									<a href="#">Sign-up</a>
+									<a href="#" id="skateSignUp">Sign-up</a>
 								</div>
 
 								<div class="iceTime">
 									<h1>3:15pm - 4:45pm</h1>
 									<h2>16 skaters + 2 goalie(s) registered</h2>
-									<a href="#">Sign-up</a>
+									<a href="#" id="skateSignUp">Sign-up</a>
 								</div>
 
 							</div>
@@ -157,6 +184,7 @@
 					<div class="monthSchedule"> <!-- Calendar -->
 
 						<div class="month">September 2015</div>
+
 							<table>
 									<tr>
 										<th>Sun</th>
@@ -372,10 +400,20 @@
 										</div>
 									</td>
 								</tr>
-
-
 						</table>
+
 					</div> <!--end calendar-->
+					<div class="map-nearByRinks">
+
+						<h5> Nearby rinks </h5>
+
+						<ul>
+							<li>	<a href="kettler.html"> Kettler Capitals Iceplex </a> </li>
+							<li>	<a href="rockville.html"> Rockville Ice Areana </a> </li>
+							<li>	<a href="reston.html"> Skatequest </a> </li>
+							<li>	<a href="wheaton.html"> Wheaton Ice Rink </a> </li>
+						</ul>
+					</div>
 			</div> <!--end right column-->
 
 		</div> <!--end container-->
@@ -383,6 +421,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script src="../js/index.js"></script>
   </body>
   </html>
